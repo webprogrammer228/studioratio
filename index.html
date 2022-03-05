@@ -18,9 +18,11 @@
     <title>Warehouse - Save your data storage here.</title>
 </head>
 <body>
+<!-- именование классов не по БЭМ -->
 <header class="main_header">
     <img src="./img/logo.svg" alt="logo">
     <nav class="navigation">
+<!--   надо именовать теги классами, а так выходит большая вложенность и потом переопределить стили будет сложновато     -->
         <ul>
             <li><a class="active" href="#">About</a></li>
             <li><a href="#main_footer">Help</a></li>
@@ -29,8 +31,10 @@
     </nav>
 </header>
 <main>
+<!-- привязывать именование к порядковому номеру плохая практика, измениться дизайн (блоки поменяются местами?! переименовывать :))    -->
     <div class="first-screen-wrapper">
         <div class="left-block">
+            <!--    применение <br> плохая практика, перенос стилями при помощи max-width      -->
             <h1 class="main_title">Save your data <br> storage here.</h1>
             <h5 class="main_subtitle">Data Warehouse is a data storage area that <br> has been
                 tested for security, so you can store <br> your data here
@@ -47,7 +51,16 @@
                 <img src="./img/secondimg.png" alt="second">
             </div>
             <div class="card-right">
+<!--      на одной странице может быть только один h1       -->
                 <h1 class="card-right__title">We are a high-level data <br> storage bank</h1>
+<!--       код надо форматировать + у закрывающего тэга лишний отступ        -->
+<!--
+                <span class="card-right__subtitle">
+                    The place to store various data that you can access at any time through the internet  and where you can carry it.
+                    This very flexible storage area has a high level of security. To enter into your own data you must enter the
+                    password that you created when you registered in this Data Warehouse.
+                </span>
+-->
                 <span class="card-right__subtitle">The place to store various data that you can access at any time through the internet  and where you can carry it.
 This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. </span>
             </div>
@@ -87,6 +100,7 @@ This very flexible storage area has a high level of security. To enter into your
                 <img src="./img/second-card.png" alt="second-card-background">
                 <div class="text-block">
                     <h1 class="card-block__title">24 Hours Access</h1>
+<!--            не аккуратный стиль кода        -->
                     <span class="card-block__subtitle">Access is given 24 hours a full morning to night and
 meet again in the morning, giving you comfort when
 you need data when urgent.</span>
@@ -203,6 +217,7 @@ you created, so only you can open the file.</span>
 
         </div>
         <div class="slider-bottom">
+            <!--    в данной ситуации для кнопок надо предусмотреть span с текстом который скрыть visually-hidden, если стили не подгрузятся, то пользователю не будет понятен функционал    -->
             <div class="slider-indicators">
                 <button class="slider-indicator active"></button>
                 <button class="slider-indicator"></button>
@@ -211,6 +226,7 @@ you created, so only you can open the file.</span>
             </div>
 
             <div class="slider-arrows">
+<!--      тут должны быть кнопки, а в них уже свг          -->
                 <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 1L1 8L7 15" stroke="white" stroke-width="2" stroke-linecap="round"
                           stroke-linejoin="round"/>
@@ -232,6 +248,7 @@ you created, so only you can open the file.</span>
     </div>
 
 </main>
+<!--    применение <hr> плохая практика, это нижний бордер у секции    -->
 <hr class="before-footer-line">
 <footer class="main_footer">
     <div class="main_footer__left-block">
