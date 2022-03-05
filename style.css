@@ -1,17 +1,22 @@
+/* Не подключен normalize */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     font-family: 'Ubuntu', sans-serif;
+    /* дефолтные шрифты на до вешать на body  */
+    /* дефолтный размер, толщина и тд для шрифтов не указана  */
 }
 
 body {
+    /* не указана минимальная ширина страницы */
     overflow-x: hidden;
 }
 
 /* ШАПКА*/
 
+/* стилизация по тегам! теги имееют больший "вес" перед классом, потом это проблемно перестилизовывать */
 header {
     display: flex;
     align-items: center;
@@ -65,6 +70,7 @@ main {
     font-weight: bold;
     font-size: 80px;
     line-height: 110%;
+    /* зачем тут отступ? */
 
     margin-bottom: 50px;
 }
@@ -96,7 +102,7 @@ main {
     display: flex;
     align-items: center;
     text-align: center;
-
+    /* Цвета не вынесены в переменные */
     color: #FFFFFF;
 
     background: #9C69E2;
@@ -621,7 +627,7 @@ main {
         left: 50%;
         transform: scale(0.5);
     }
-
+    /* после , перенос на след строку, это не читаемо */
     .card-block:first-child .image-background::before, .card-block:nth-child(2) .image-background::before, .card-block:nth-child(3) .image-background::before, .card-block:last-child .image-background::before {
         top: -94px;
         margin-left: -110px;
@@ -730,7 +736,7 @@ main {
     .before-footer-line {
         margin-bottom: 40px;
     }
-    
+
     .main_footer {
         display: block;
     }
